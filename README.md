@@ -69,11 +69,11 @@ In order to display the author bio box, you need to put author description in th
 
 2. [Varela] (https://www.google.com/fonts/specimen/Varela) - [License] (http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
 
-3.[Roboto] (https://www.google.com/fonts/specimen/Roboto) - [License] (http://www.apache.org/licenses/LICENSE-2.0.html)
+3. [Roboto] (https://www.google.com/fonts/specimen/Roboto) - [License] (http://www.apache.org/licenses/LICENSE-2.0.html)
 
 #### Screenshot Image
-The screenshot.png created by author & licensed it to GPL v3 or later (http://www.gnu.org/licenses/gpl-3.0.html).
-Image used in screenshot.png were picked from https://www.pixabay.com , licensed under CC0 ( https://creativecommons.org/choose/zero/ )
+The screenshot.png created by author & licensed it to [GPL v3 or later] (http://www.gnu.org/licenses/gpl-3.0.html).
+Image used in screenshot.png were picked from [pixabay] (https://www.pixabay.com) , [licensed under CC0] ( https://creativecommons.org/choose/zero ) .
 
 [Image Source] (https://pixabay.com/en/photography-taking-picture-display-801891/)
 
@@ -82,8 +82,9 @@ Image used in screenshot.png were picked from https://www.pixabay.com , licensed
 #### Bootstrap
 This theme packed with Bootstrap framework which is released under various licenses (MIT & CC)
 Link : http://getbootstrap.com/
-License URL: https://github.com/twbs/bootstrap/blob/master/LICENSE
-License URL: https://creativecommons.org/licenses/by/3.0/
+
+* License URL: https://github.com/twbs/bootstrap/blob/master/LICENSE
+* License URL: https://creativecommons.org/licenses/by/3.0/
 
 
 #### WOW Animation
@@ -93,16 +94,10 @@ License: Open Source (license url is not avaiable)
 
 #### FontAwesome Icons
 WpF ultraResponsive packed with font awesome which released under various licenses (SIL OFL, MIT, CC).
-
 Link : http://fortawesome.github.io/Font-Awesome/ 
-License 1: http://scripts.sil.org/OFL
-License 2: http://opensource.org/licenses/mit-license.html
-License 3: http://creativecommons.org/licenses/by/3.0/
 
-#### jQuery
-Link : http://jquery.com/
-License: https://jquery.org/license/ ( Open Source)
+* License 1: http://scripts.sil.org/OFL
+* License 2: http://opensource.org/licenses/mit-license.html
+* License 3: http://creativecommons.org/licenses/by/3.0/
 
-#### jQuery Preloader
-Link: https://blog.gaya.ninja/articles/queryloader2-preload-your-images-with-ease/
-License: http://www.opensource.org/licenses/mit-license.php
+ [jQuery Preloader] (https://blog.gaya.ninja/articles/queryloader2-preload-your-images-with-ease/) - [license](http://www.opensource.org/licenses/mit-license.php)
