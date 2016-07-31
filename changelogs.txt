@@ -1,0 +1,43 @@
+1.2.1--- 04 Jan 2016
+- Properly escaped theme setting option values.
+- Properly replaced Query function in related-posts.php .
+- Fix minor css bugs.
+- Added conditional author bio box, author bio will appear if the author description not empty.
+- Added custom header text color.
+- Added enable/disable option for footer top.
+- Edited readme.txt file.
+- Edited changelog.txt file.
+- Fixed logo issue.
+- Removed favicon uploader customizer option, site icon is available by default for that.
+- Fixed custom header image height issue.
+- Removed TGM plugin activation.
+
+1.2---
+- Added default values in customizer settings
+- Added Default body background color
+- Prefixed images sizes & functions
+- Fixed logo overflowing issue for bigger images
+- Added custom header text color.
+- Regenarate .pot file for multi-languge support
+- Edited license.txt file
+- Added changelog.txt file with download package
+
+1.1.2---
+- Fixed WordPress gallery css issues
+
+1.1.1---
+- Remove sidebar/footer prompt text.
+
+1.1---
+-Replace menu with the theme_location in wp_nav_menu.
+- Added non-minified versions for all scripts including css/js
+- Banner & Footer texts properly escaped
+- All customizer settings properly renamed
+- Removed add_editor_style wrapper function
+- register_nav_menu included in after_theme_setup function & removed fallback menu
+- Prefixed some functions properly according to theme name
+- fixed issues for enqueqing scripts
+
+
+1.0---
+- Initial Release
