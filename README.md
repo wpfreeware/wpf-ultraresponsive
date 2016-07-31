@@ -88,13 +88,13 @@ Link : http://getbootstrap.com/
 
 
 #### WOW Animation
-Link : http://mynameismatthieu.com/WOW/
-License: Open Source (license url is not avaiable)
+* URL : http://mynameismatthieu.com/WOW/
+* License: http://www.gnu.org/licenses/gpl-3.0.html
 
 
 #### FontAwesome Icons
 WpF ultraResponsive packed with font awesome which released under various licenses (SIL OFL, MIT, CC).
-Link : http://fortawesome.github.io/Font-Awesome/ 
+URL : http://fortawesome.github.io/Font-Awesome/ 
 
 * License 1: http://scripts.sil.org/OFL
 * License 2: http://opensource.org/licenses/mit-license.html
