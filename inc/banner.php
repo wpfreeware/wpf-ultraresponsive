@@ -1,18 +1,14 @@
     <!--=========== BEGIN COURSE BANNER SECTION ================-->
 
 
-	<?php  if(get_header_image()) : ?>
+
+    
+<?php if( get_header_image() ): ?> 
+	<!--=========== BEGIN IMAGE BANNER SECTION ================-->
+	<section id="imgBanner">
+		  
+		<img src="<?php echo esc_url( get_header_image() ); ?>" alt="<?php esc_attr( bloginfo( 'description' ) ) ; ?>" />
 		
-		<section id="imgBanner">
-		
-			<?php  if(get_theme_mod( 'ultraResponsive_banner_title')) : ?>
-			
-				<h2><?php echo esc_html( get_theme_mod( 'ultraResponsive_banner_title') );?></h2>
-				
-			<?php endif; ?>			
-		
-		</section>	
-		
-	<?php endif; ?>		
-	
-    <!--=========== END COURSE BANNER SECTION ================-->	
+	</section>        
+	<!--=========== END IMAGE BANNER SECTION ================-->
+<?php endif; ?>    

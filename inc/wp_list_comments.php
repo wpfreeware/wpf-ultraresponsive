@@ -1,8 +1,12 @@
 <?php
-
-/*-----------------------------------------------------------------------------------*/
-# Custom Comments Template
-/*-----------------------------------------------------------------------------------*/
+/*
+ *	This file contains comments template
+ *
+ *	@since wpf-ultraresponsive 1.0
+ */
+/*-----------------------------------------------------------------------------------
+	 Custom Comments Template
+-----------------------------------------------------------------------------------*/
 
 function wpf_ultraresponsive_custom_comments($comment, $args, $depth) {
     $isByAuthor = false;
@@ -35,8 +39,5 @@ function wpf_ultraresponsive_custom_comments($comment, $args, $depth) {
 		  </div>
 		 </div>
     </li>
-<?php
-}
 
-
-?>
+<?php }

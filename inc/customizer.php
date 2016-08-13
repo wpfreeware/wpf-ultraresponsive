@@ -1,5 +1,9 @@
 <?php 
-
+/*
+ *	This file contains theme customizer settings
+ *
+ *	@since wp-ultraresponsive 1.0
+ */
 function wpf_ultraresponsive_customizer_register( $wp_customize ) {
    
  
@@ -22,52 +26,23 @@ $wp_customize->add_panel( 'wpf_ultraresponsive_theme_option', array(
 
 
 $wp_customize->add_section( 'logo_favicon_section' , array(
-    'title'      => __( 'Logo', 'wpf-ultraresponsive' ),
-	'panel' => 'wpf_ultraresponsive_theme_option',
+    'title'      		=> __( 'Logo', 'wpf-ultraresponsive' ),
+	'panel' 			=> 'wpf_ultraresponsive_theme_option',
 ) );
 
 
 // logo settings
 $wp_customize->add_setting( 'ultraResponsive_logo_uploader' , array(
-	'default'     => '',
+	'default'     		=> '',
 	'sanitize_callback' => 'esc_url_raw',
 ) );
 
 
 $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'ultraResponsive_logo_uploader', array(
-	'label'        => __( 'Upload Your Logo. Best size: Width is free, height is 30px', 'wpf-ultraresponsive' ),
-	'section'    => 'logo_favicon_section',
-	'settings'   => 'ultraResponsive_logo_uploader',
-) ) );
-
-
-
-
-
-///////////////////////////
-// Banner Title 
-////////////////////////
-
-
-
-$wp_customize->add_section( 'banner_section' , array(
-    'title'      => __( 'Header Image Title', 'wpf-ultraresponsive' ),
-	'priority' => 70,
-) );
-
-
-// Banner Title
-
-$wp_customize->add_setting( 'ultraResponsive_banner_title' , array(
-	'default'     => '',
-	'transport' => 'postMessage',
-	'sanitize_callback' => 'sanitize_text_field',
-) );
-
-$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'ultraResponsive_banner_title', array(
-	'label'        => __( 'Put Banner Title.', 'wpf-ultraresponsive' ),
-	'section'    => 'banner_section',
-	'settings'   => 'ultraResponsive_banner_title',
+	'label'        		=> __( 'Upload Your Logo. Best size: Width is free, height is 30px', 'wpf-ultraresponsive' ),
+	'description' 		=> __('This option is <b>deprecated</b> Since WP 4.5. Flaty includes native logo support. Please upload your logo from <b>Site Identity</b> section.', 'wpf-ultraresponsive'),	
+	'section'    		=> 'logo_favicon_section',
+	'settings'   		=> 'ultraResponsive_logo_uploader',
 ) ) );
 
 
@@ -78,15 +53,15 @@ $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'ultraRespo
 
 
 $wp_customize->add_section( 'ultraResponsive_preloader' , array(
-    'title'      => __( 'Disable Preloader', 'wpf-ultraresponsive' ),
-	'panel' => 'wpf_ultraresponsive_theme_option',
+    'title'      			=> __( 'Disable Preloader', 'wpf-ultraresponsive' ),
+	'panel' 				=> 'wpf_ultraresponsive_theme_option',
 ) );
 
 
 $wp_customize->add_setting(
     'ultraResponsive_preloader_activation',
     array(
-        'default' => 'enable',
+        'default' 			=> 'enable',
 		'sanitize_callback' => 'wpf_ultraresponsive_sanitize_choices',
     )
 );
@@ -94,13 +69,13 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
     'ultraResponsive_preloader_activation',
     array(
-        'type' => 'radio',
-        'label' => '',
-        'section' => 'ultraResponsive_preloader',
-		'settings'   => 'ultraResponsive_preloader_activation',
-        'choices' => array(
-            'enable' => __( 'Enable', 'wpf-ultraresponsive' ),
-            'disable' => __( 'Disable', 'wpf-ultraresponsive' ),
+        'type' 				=> 'radio',
+        'label' 			=> '',
+        'section' 			=> 'ultraResponsive_preloader',
+		'settings'  		=> 'ultraResponsive_preloader_activation',
+        'choices' 			=> array(
+            'enable' 		=> __( 'Enable', 'wpf-ultraresponsive' ),
+            'disable' 		=> __( 'Disable', 'wpf-ultraresponsive' ),
         ),
     )
 );
@@ -113,15 +88,15 @@ $wp_customize->add_control(
 
 
 $wp_customize->add_section( 'ultraResponsive_animation' , array(
-    'title'      => __( 'Disable Animation', 'wpf-ultraresponsive' ),
-	'panel' => 'wpf_ultraresponsive_theme_option',
+    'title'      			=> __( 'Disable Animation', 'wpf-ultraresponsive' ),
+	'panel' 				=> 'wpf_ultraresponsive_theme_option',
 ) );
 
 
 $wp_customize->add_setting(
     'ultraResponsive_animation_activation',
     array(
-        'default' => 'enable',
+        'default' 			=> 'enable',
 		'sanitize_callback' => 'wpf_ultraresponsive_sanitize_choices',
     )
 );
@@ -129,13 +104,13 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
     'ultraResponsive_animation_activation',
     array(
-        'type' => 'radio',
-        'label' => __( 'Enable or disable smooth animations', 'wpf-ultraresponsive' ),
-        'section' => 'ultraResponsive_animation',
-		'settings'   => 'ultraResponsive_animation_activation',
-        'choices' => array(
-            'enable' => __( 'Enable', 'wpf-ultraresponsive' ),
-            'disable' => __( 'Disable', 'wpf-ultraresponsive' ),
+        'type' 				=> 'radio',
+        'label' 			=> __( 'Enable or disable smooth animations', 'wpf-ultraresponsive' ),
+        'section' 			=> 'ultraResponsive_animation',
+		'settings'   		=> 'ultraResponsive_animation_activation',
+        'choices' 			=> array(
+            'enable' 		=> __( 'Enable', 'wpf-ultraresponsive' ),
+            'disable' 		=> __( 'Disable', 'wpf-ultraresponsive' ),
         ),
     )
 );
@@ -148,15 +123,15 @@ $wp_customize->add_control(
 
 
 $wp_customize->add_section( 'ultraResponsive_sidebar' , array(
-    'title'      => __( 'Choose Sidebar', 'wpf-ultraresponsive' ),
-	'panel' => 'wpf_ultraresponsive_theme_option',
+    'title'      			=> __( 'Choose Sidebar', 'wpf-ultraresponsive' ),
+	'panel' 				=> 'wpf_ultraresponsive_theme_option',
 ) );
 
 
 $wp_customize->add_setting(
     'ultraResponsive_sidebar_settings',
     array(
-        'default' => 'right',
+        'default' 			=> 'right',
 		'sanitize_callback' => 'wpf_ultraresponsive_sanitize_choices',
     )
 );
@@ -164,13 +139,13 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
     'ultraResponsive_sidebar_settings',
     array(
-        'type' => 'radio',
-        'label' => __( 'Select your sidebar. These will be applied to your home, post, archive, search, author etc templates.', 'wpf-ultraresponsive' ),
-        'section' => 'ultraResponsive_sidebar',
-		'settings'   => 'ultraResponsive_sidebar_settings',
-        'choices' => array(
-            'left' => __( 'Left', 'wpf-ultraresponsive' ),
-            'right' => __( 'Right', 'wpf-ultraresponsive' ),
+        'type' 				=> 'radio',
+        'label' 			=> __( 'Select your sidebar. These will be applied to your home, post, archive, search, author etc templates.', 'wpf-ultraresponsive' ),
+        'section' 			=> 'ultraResponsive_sidebar',
+		'settings'   		=> 'ultraResponsive_sidebar_settings',
+        'choices' 			=> array(
+            'left' 		=> __( 'Left', 'wpf-ultraresponsive' ),
+            'right' 	=> __( 'Right', 'wpf-ultraresponsive' ),
         ),
     )
 );
@@ -181,34 +156,34 @@ $wp_customize->add_control(
 /////////////////////////
 
 $wp_customize->add_section( 'theme_color_section' , array(
-    'title'      => __( 'Theme Colors', 'wpf-ultraresponsive' ),
-	'panel' => 'wpf_ultraresponsive_theme_option',
+    'title'      			=> __( 'Theme Colors', 'wpf-ultraresponsive' ),
+	'panel' 				=> 'wpf_ultraresponsive_theme_option',
 ) );
 
 
 // main color settings
 $wp_customize->add_setting( 'wpf_ultraresponsive_theme_color' , array(
-	'default'     => '#78ADC9',
-	'sanitize_callback' => 'sanitize_hex_color',
+	'default'     			=> '#78ADC9',
+	'sanitize_callback' 	=> 'sanitize_hex_color',
 ) );
 
 $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'wpf_ultraresponsive_theme_color', array(
-	'label'        => __( 'Select Color Scheme', 'wpf-ultraresponsive' ),
-	'section'    => 'theme_color_section',
-	'settings'   => 'wpf_ultraresponsive_theme_color',
+	'label'        			=> __( 'Select Color Scheme', 'wpf-ultraresponsive' ),
+	'section'    			=> 'theme_color_section',
+	'settings'   			=> 'wpf_ultraresponsive_theme_color',
 ) ) );
 
 
 // Header/Footer color settings
 $wp_customize->add_setting( 'wpf_ultraresponsive_theme_header_footer_color' , array(
-	'default'     => '#313B3D',
-	'sanitize_callback' => 'sanitize_hex_color',
+	'default'     			=> '#313B3D',
+	'sanitize_callback' 	=> 'sanitize_hex_color',
 ) );
 
 $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'wpf_ultraresponsive_theme_header_footer_color', array(
-	'label'        => __( 'Select Header & Footer Color', 'wpf-ultraresponsive' ),
-	'section'    => 'theme_color_section',
-	'settings'   => 'wpf_ultraresponsive_theme_header_footer_color',
+	'label'        			=> __( 'Select Header & Footer Color', 'wpf-ultraresponsive' ),
+	'section'    			=> 'theme_color_section',
+	'settings'   			=> 'wpf_ultraresponsive_theme_header_footer_color',
 ) ) );
 
 
@@ -221,8 +196,8 @@ $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'wpf_
 
 
 $wp_customize->add_section( 'footer_section' , array(
-    'title'      => __( 'Footer Setting', 'wpf-ultraresponsive' ),
-	'panel' => 'wpf_ultraresponsive_theme_option',
+    'title'      			=> __( 'Footer Setting', 'wpf-ultraresponsive' ),
+	'panel' 				=> 'wpf_ultraresponsive_theme_option',
 ) );
 
 
@@ -234,7 +209,7 @@ $wp_customize->add_section( 'footer_section' , array(
 $wp_customize->add_setting(
     'ultraResponsive_footer_top_option',
     array(
-        'default' => 'enable',
+        'default' 			=> 'enable',
 		'sanitize_callback' => 'wpf_ultraresponsive_sanitize_choices',
     )
 );
@@ -242,13 +217,13 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
     'ultraResponsive_footer_top_option',
     array(
-        'type' => 'radio',
-        'label' => __( 'Enable / Disable footer top area', 'wpf-ultraresponsive' ),
-        'section' => 'footer_section',
-		'settings'   => 'ultraResponsive_footer_top_option',
-        'choices' => array(
-            'enable' => __( 'Enable', 'wpf-ultraresponsive' ),
-            'disable' => __( 'Disable', 'wpf-ultraresponsive' ),
+        'type' 				=> 'radio',
+        'label' 			=> __( 'Enable / Disable footer top area', 'wpf-ultraresponsive' ),
+        'section' 			=> 'footer_section',
+		'settings'   		=> 'ultraResponsive_footer_top_option',
+        'choices' 			=> array(
+            'enable' 	=> __( 'Enable', 'wpf-ultraresponsive' ),
+            'disable' 	=> __( 'Disable', 'wpf-ultraresponsive' ),
         ),
     )
 );
@@ -257,16 +232,16 @@ $wp_customize->add_control(
 // footer bottom text 
 
 $wp_customize->add_setting( 'ultraResponsive_footer_text' , array(
-	'default'     => __( 'Footer text here.', 'wpf-ultraresponsive' ),
-	'sanitize_callback' => 'sanitize_text_field',
-	'transport' => 'postMessage',
+	'default'     			=> __( 'Footer text here.', 'wpf-ultraresponsive' ),
+	'sanitize_callback' 	=> 'sanitize_text_field',
+	'transport' 			=> 'postMessage',
 ) );
 
 
 $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'ultraResponsive_footer_text', array(
-	'label'        => __( 'Put your footer text here.', 'wpf-ultraresponsive' ),
-	'section'    => 'footer_section',
-	'settings'   => 'ultraResponsive_footer_text',
+	'label'        			=> __( 'Put your footer text here.', 'wpf-ultraresponsive' ),
+	'section'    			=> 'footer_section',
+	'settings'   			=> 'ultraResponsive_footer_text',
 ) ) );
 
 
@@ -276,70 +251,70 @@ $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'ultraRespo
 
 // facebook
 $wp_customize->add_setting( 'footer_social_facebook' , array(
-	'default'     => '',
-	'sanitize_callback' => 'esc_url_raw',
+	'default'     			=> '',
+	'sanitize_callback' 	=> 'esc_url_raw',
 ) );
 
 
 $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'footer_social_facebook', array(
-	'label'        => __( 'Facebook Url', 'wpf-ultraresponsive' ),
-	'section'    => 'footer_section',
-	'settings'   => 'footer_social_facebook',
+	'label'        			=> __( 'Facebook Url', 'wpf-ultraresponsive' ),
+	'section'    			=> 'footer_section',
+	'settings'   			=> 'footer_social_facebook',
 ) ) );
 
 //twitter
 $wp_customize->add_setting( 'footer_social_twitter' , array(
-	'default'     => '',
-	'sanitize_callback' => 'esc_url_raw',
+	'default'     			=> '',
+	'sanitize_callback' 	=> 'esc_url_raw',
 ) );
 
 
 $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'footer_social_twitter', array(
-	'label'        => __( 'Twitter Url', 'wpf-ultraresponsive' ),
-	'section'    => 'footer_section',
-	'settings'   => 'footer_social_twitter',
+	'label'        			=> __( 'Twitter Url', 'wpf-ultraresponsive' ),
+	'section'    			=> 'footer_section',
+	'settings'   			=> 'footer_social_twitter',
 ) ) );
 
 
 //google+ 
 $wp_customize->add_setting( 'footer_social_googleplus' , array(
-	'default'     => '',
-	'sanitize_callback' => 'esc_url_raw',
+	'default'    			=> '',
+	'sanitize_callback' 	=> 'esc_url_raw',
 ) );
 
 
 $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'footer_social_googleplus', array(
-	'label'        => __( 'Google+ Url', 'wpf-ultraresponsive' ),
-	'section'    => 'footer_section',
-	'settings'   => 'footer_social_googleplus',
+	'label'        			=> __( 'Google+ Url', 'wpf-ultraresponsive' ),
+	'section'    			=> 'footer_section',
+	'settings'   			=> 'footer_social_googleplus',
 ) ) );
 
 
 //linkedin 
 $wp_customize->add_setting( 'footer_social_linkin' , array(
-	'default'     => '',
-	'sanitize_callback' => 'esc_url_raw',
+	'default'     			=> '',
+	'sanitize_callback' 	=> 'esc_url_raw',
 ) );
 
 
 $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'footer_social_linkin', array(
-	'label'        => __( 'LinkedIn Url', 'wpf-ultraresponsive' ),
-	'section'    => 'footer_section',
-	'settings'   => 'footer_social_linkin',
+	'label'        			=> __( 'LinkedIn Url', 'wpf-ultraresponsive' ),
+	'section'    			=> 'footer_section',
+	'settings'   			=> 'footer_social_linkin',
 ) ) );
 
 
 //youtube 
 $wp_customize->add_setting( 'footer_social_youtube' , array(
-	'default'     => '',
-	'sanitize_callback' => 'esc_url_raw',
+	'default'     			=> '',
+	'sanitize_callback' 	=> 'esc_url_raw',
 ) );
 
 
 $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'footer_social_youtube', array(
-	'label'        => __( 'Youtube Url', 'wpf-ultraresponsive' ),
-	'section'    => 'footer_section',
-	'settings'   => 'footer_social_youtube',
+	'label'        			=> __( 'Youtube Url', 'wpf-ultraresponsive' ),
+	'section'    			=> 'footer_section',
+	'settings'   			=> 'footer_social_youtube',
 ) ) );
 
 
@@ -378,10 +353,6 @@ function wpf_ultraresponsive_customize_css()
     ?>
 		<!-- banner & header/footer backgroud -->
          <style type="text/css">
-		 
-             <?php  if(get_header_image()) : ?>
-				#imgBanner{ background-image: url("<?php echo esc_url(get_header_image()); ?>") !important;}
-			 <?php endif;?>
 			 
 			 .navbar-default,
 			 .navbar-nav > li > .dropdown-menu,
@@ -622,5 +593,3 @@ function wpf_ultraresponsive_customizer_live_preview() {
 
 } 
 add_action( 'customize_preview_init', 'wpf_ultraresponsive_customizer_live_preview' );
-
-?>

@@ -84,7 +84,7 @@ function wpf_ultraresponsive_page_navi() {
  * @since WpF ultraResponsive 1.0
  */
 if ( ! isset( $content_width ) ) {
-	$content_width = 750;
+	$content_width = 1170;
 }
 
 
@@ -118,12 +118,22 @@ function wpf_ultraresponsive_setup() {
 	
 
 	/*
+	 * Enable custom logo
+	 */		
+	add_theme_support( 'custom-logo', array(
+		'height'      => 33,
+		'flex-height' => true,
+		'flex-width'  => true,
+	) );
+
+
+	/*
 	 * Custom Header image support
 	 */	
 	 
 	$header_args = array(
 		'width'                  => 1920,
-		'height'                 => 300,
+		'height'                 => 320,
 		'flex-height'            => true,
 		'flex-width'             => true,
 		'uploads'                => true,
@@ -256,6 +266,3 @@ function wpf_ultraresponsive_post_link_attributes_previous($output) {
     $injection = 'class="prev_post wow fadeInLeft"';
     return str_replace('<a href=', '<a '.$injection.' href=', $output);
 }
-
-
-?>
