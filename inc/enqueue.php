@@ -1,6 +1,9 @@
 <?php
-
-
+/*
+ *	This file contains theme scripts & css
+ *
+ *	@since wpf-ultraresponsive 1.0
+ */
 function wpf_ultraresponsive_scripts() {
    
 	/******* Register Scripts ****/
@@ -13,8 +16,8 @@ function wpf_ultraresponsive_scripts() {
    
    // wow animation
 	if( get_theme_mod( 'ultraResponsive_animation_activation', 'enable') == 'enable' ) { 
-	wp_enqueue_script( 'wpf_ultraresponsive_wowjs', get_template_directory_uri() . '/js/wow.js', false, null, true );
-	wp_enqueue_script( 'wpf_ultraresponsive_wow_activation', get_template_directory_uri() . '/js/wow_activation.js', false, null, true );
+		wp_enqueue_script( 'wpf_ultraresponsive_wowjs', get_template_directory_uri() . '/js/wow.js', false, null, true );
+		wp_enqueue_script( 'wpf_ultraresponsive_wow_activation', get_template_directory_uri() . '/js/wow_activation.js', false, null, true );
 	}
 	
 	wp_enqueue_script( 'wpf_ultraresponsive_bootstrapjs', get_template_directory_uri() . '/js/bootstrap.js', false, null, true );
@@ -43,9 +46,4 @@ function wpf_ultraresponsive_scripts() {
 	
 
 }
-
-
-if (!is_admin()) add_action("wp_enqueue_scripts", "wpf_ultraresponsive_scripts", 11);
-
-
-?>
+add_action( 'wp_enqueue_scripts', 'wpf_ultraresponsive_scripts' ) ;
