@@ -382,10 +382,6 @@ function wpf_ultraresponsive_customize_css()
     ?>
 		<!-- banner & header/footer backgroud -->
          <style type="text/css">
-		 
-             <?php  if(get_header_image()) : ?>
-				#imgBanner{ background-image: url("<?php echo esc_url(get_header_image()); ?>") !important;}
-			 <?php endif;?>
 			 
 			 .navbar-default,
 			 .navbar-nav > li > .dropdown-menu,

@@ -123,7 +123,7 @@ function wpf_ultraresponsive_setup() {
 	 
 	$header_args = array(
 		'width'                  => 1920,
-		'height'                 => 300,
+		'height'                 => 320,
 		'flex-height'            => true,
 		'flex-width'             => true,
 		'uploads'                => true,
