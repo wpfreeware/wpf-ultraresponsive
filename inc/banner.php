@@ -1,8 +1,3 @@
-    <!--=========== BEGIN COURSE BANNER SECTION ================-->
-
-
-
-    
 <?php if( get_header_image() ): ?> 
 	<!--=========== BEGIN IMAGE BANNER SECTION ================-->
 	<section id="imgBanner">
