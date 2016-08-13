@@ -53,10 +53,8 @@
 						</div>
 						
 						<?php endif; ?>
+
 						
-						<div class="single_page_content_container">
-						
-							<h1 class="blog_title"><?php the_title();?></h1>
 							
 							<?php the_content();?>
 							
@@ -70,10 +68,7 @@
 									'link_after'  => '',
 								) );								  
 							  
-							  ?>							
-											
-						
-						</div>
+							  ?>
 						
 					
 						
