@@ -35,17 +35,31 @@
 			 
 			<!-- logo start -->
 			
-			<?php  if(get_theme_mod( 'ultraResponsive_logo_uploader')) : ?>
-			
-				<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo esc_url(get_theme_mod( 'ultraResponsive_logo_uploader'));?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"></a>
+		<?php 
+			if( function_exists( 'the_custom_logo' ) && has_custom_logo() ) :
+			 
+			$custom_logo_id 	= get_theme_mod( 'custom_logo' );
+			$custom_logo 		= wp_get_attachment_image_src( $custom_logo_id , 'full' );		
+		?>
+			<!-- logo img -->			
+			<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" >
+				<img src="<?php echo $custom_logo[0]; ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" />
+			</a>							
+		
+		<?php  elseif( get_theme_mod( 'ultraResponsive_logo_uploader', '' ) ) : ?>
+			<!-- logo img -->			
+			<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">
+				<img src="<?php echo esc_url( get_theme_mod( 'ultraResponsive_logo_uploader', '' ) ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
+			</a>			
 
-			<?php else : ?>
-				
-				<a class="navbar-brand logo_text" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo('name', 'display'); ?></a>
-				
-			<?php endif; ?>	
+		<?php else : ?>
+			<!-- logo text -->
+			<a class="navbar-brand logo_text" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>"><?php bloginfo('name', 'display'); ?></a>
+		<?php endif; ?>	
 			
-			<!-- logo end -->			
+			<!-- logo end -->				
+			
+					
                    
           </div>
 		  

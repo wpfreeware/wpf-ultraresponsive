@@ -118,6 +118,16 @@ function wpf_ultraresponsive_setup() {
 	
 
 	/*
+	 * Enable custom logo
+	 */		
+	add_theme_support( 'custom-logo', array(
+		'height'      => 33,
+		'flex-height' => true,
+		'flex-width'  => true,
+	) );
+
+
+	/*
 	 * Custom Header image support
 	 */	
 	 
