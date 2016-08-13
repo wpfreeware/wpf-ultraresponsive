@@ -256,6 +256,3 @@ function wpf_ultraresponsive_post_link_attributes_previous($output) {
     $injection = 'class="prev_post wow fadeInLeft"';
     return str_replace('<a href=', '<a '.$injection.' href=', $output);
 }
-
-
-?>

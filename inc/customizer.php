@@ -1,5 +1,9 @@
 <?php 
-
+/*
+ *	This file contains theme customizer settings
+ *
+ *	@since wp-ultraresponsive 1.0
+ */
 function wpf_ultraresponsive_customizer_register( $wp_customize ) {
    
  
@@ -622,5 +626,3 @@ function wpf_ultraresponsive_customizer_live_preview() {
 
 } 
 add_action( 'customize_preview_init', 'wpf_ultraresponsive_customizer_live_preview' );
-
-?>
