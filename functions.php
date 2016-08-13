@@ -84,7 +84,7 @@ function wpf_ultraresponsive_page_navi() {
  * @since WpF ultraResponsive 1.0
  */
 if ( ! isset( $content_width ) ) {
-	$content_width = 750;
+	$content_width = 1170;
 }
 
 
