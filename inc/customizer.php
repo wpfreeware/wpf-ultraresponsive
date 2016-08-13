@@ -45,36 +45,6 @@ $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'ultr
 ) ) );
 
 
-
-
-
-///////////////////////////
-// Banner Title 
-////////////////////////
-
-
-
-$wp_customize->add_section( 'banner_section' , array(
-    'title'      => __( 'Header Image Title', 'wpf-ultraresponsive' ),
-	'priority' => 70,
-) );
-
-
-// Banner Title
-
-$wp_customize->add_setting( 'ultraResponsive_banner_title' , array(
-	'default'     => '',
-	'transport' => 'postMessage',
-	'sanitize_callback' => 'sanitize_text_field',
-) );
-
-$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'ultraResponsive_banner_title', array(
-	'label'        => __( 'Put Banner Title.', 'wpf-ultraresponsive' ),
-	'section'    => 'banner_section',
-	'settings'   => 'ultraResponsive_banner_title',
-) ) );
-
-
 //////////////////////////////
 // Preloader enable/disable
 ///////////////////////////////

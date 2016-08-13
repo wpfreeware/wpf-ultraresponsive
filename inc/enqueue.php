@@ -22,6 +22,7 @@ function wpf_ultraresponsive_scripts() {
 	
 	wp_enqueue_script( 'wpf_ultraresponsive_bootstrapjs', get_template_directory_uri() . '/js/bootstrap.js', false, null, true );
 	wp_enqueue_script( 'wpf_ultraresponsive_customjs', get_template_directory_uri() . '/js/custom.js', false, null, true );
+
 	
 	// IE Fallbacks
 	wp_enqueue_script( 'ie_html5shiv', get_template_directory_uri(). '/js/html5shiv.js', false, '3.7.3', false);
