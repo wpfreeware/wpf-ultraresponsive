@@ -14,6 +14,7 @@
 **/
 
 (function ($) {
+
 	
 /* ----------------------------------------------------------- */
 /*  1. DROPDOWN MENU
@@ -25,6 +26,7 @@
 	}, function() {
 	  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(200);
 	});
+
 	
 /* ----------------------------------------------------------- */
 /*  2. BOOTSTRAP TOOLTIP
@@ -32,11 +34,13 @@
 	$('.soc_tooltip').tooltip('hide');
 
 
+
+
 /* ----------------------------------------------------------- */
 /*  3. SCROLL UP BUTTON
 /* ----------------------------------------------------------- */  
 
-  	//Check to see if the window is top if not then display button
+  	  //Check to see if the window is top if not then display button
 
 	  $(window).scroll(function(){
 	    if ($(this).scrollTop() > 300) {
@@ -58,13 +62,12 @@
 /* ----------------------------------------------------------- */ 
 
 
-	if ($('#imgBanner').length > 0){  // return's true if element is present
+	if ( $('#imgBanner').length > 0 ){  // return's true if element is present
 		
 	   	$('#courseArchive').addClass('coursearchive_pushup');
 	}
 	else {
 	 	$('#courseArchive').addClass('coursearchive_pushdown');
-	} 
-	
+	}
 
 }(jQuery));
