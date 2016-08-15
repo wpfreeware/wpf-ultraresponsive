@@ -1,3 +1,14 @@
+1.2.2--- 
+- Added native logo support.
+- Fixed jetpack gallery issue.
+- Fixed .screen-reader-text class for accessibility
+- Removed closing php tag from functions.php.
+- Fixed custom header image for mobile devices.
+- Added enable/disable option for footer top.
+- Fixed mobile menu.
+- Fix dropdown menu.
+
+
 1.2.1--- 04 Jan 2016
 - Properly escaped theme setting option values.
 - Properly replaced Query function in related-posts.php .
