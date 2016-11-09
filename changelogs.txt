@@ -1,4 +1,4 @@
-1.2.2--- 
+1.2.2--- 25 Nov 2016
 - Added native logo support.
 - Fixed jetpack gallery issue.
 - Fixed .screen-reader-text class for accessibility
