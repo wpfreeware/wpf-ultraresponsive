@@ -176,8 +176,8 @@ function wpf_ultraresponsive_setup() {
 	 * See: https://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 	 */
 	add_theme_support( 'post-thumbnails' );
-	set_post_thumbnail_size( 1024, 570, true ); // default size
-	add_image_size( 'wpf-ultraresponsive-post-image', 750, 422, true ); // post-thumb
+	set_post_thumbnail_size( 1024, 570 ); // default size
+	add_image_size( 'wpf-ultraresponsive-post-image', 750, 422 ); // post-thumb
 
 	/*
 	 * Switch default core markup for search form, comment form, and comments
