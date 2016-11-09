@@ -517,6 +517,13 @@ figure{max-width:100%;}
   width: 100%;
 }
 
+#imgBanner img{
+	width: 100%;
+}
+
+#imgBanner+#courseArchive{
+	margin-top: 0;
+} 
 
 #imgBanner h2 {
   color: #fff;
@@ -529,6 +536,7 @@ figure{max-width:100%;}
 #courseArchive{
   float: left;
   display: inline;
+  margin-top: 80px;
   width: 100%;
   min-height: 500px;
 }
@@ -831,6 +839,11 @@ figure{max-width:100%;}
   font-size:28px;
 }
 
+.blog_title a {
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
 
 .blog_title a:hover{
   text-decoration: none;
@@ -1962,7 +1975,10 @@ pre{
 	font-size:13px;
 }
  
-}	/* end max-width:480px */
+}	
+
+
+/* end max-width:480px */
 
 
 
@@ -2009,18 +2025,34 @@ pre{
 	font-size: 30px;
 }
 
-
 .blog_title {
-	font-size: 20px;line-height: 30px;
+	font-size: 20px;
+	line-height: 30px;
 }
-
 
 .gallery_area a {
-	width: 100%;margin-right: 0;margin-left: 0;height: 200px;
+	width: 100%;
+	margin-right: 0;
+	margin-left: 0;
+	height: 200px;
+}
+
+.single_blog_prevnext{
+	text-align: center;
+}
+
+.single_blog_prevnext a{
+	float: none;	
+}
+
+.next_post{
+	margin-top: 10px;	
 }
 
 
-}	/* end max-width:360px */
+}	
+
+/* end max-width:360px */
 
 
 
