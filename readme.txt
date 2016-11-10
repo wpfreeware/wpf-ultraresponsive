@@ -1,5 +1,4 @@
-#### About Theme
-Theme Name: WpF Ultraresponsive
+== About Theme ==
 Contributors: WpFreeware
 Contributors URI: http://www.wpfreeware.com/wpf-ultraresponsive-free-mobile-friendly-wordpress-theme/
 Tags: full-width-template, one-column, two-column, custom-colors, theme-options, threaded-comments, sticky-post, custom-background, custom-menu, editor-style, featured-images, gray, light, microformats, responsive-layout, right-sidebar, left-sidebar, rtl-language-support, translation-ready, two-columns, black, blue, brown,
@@ -8,11 +7,11 @@ Tested up to: 4.6.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-##### Description
+== Description ==
 
 UltraResponsive is a free WordPress theme from WpFreeware.com. If you are looking for a beautifully designed clean & professional looking WordPress theme then WpF ultraResponsive is for you.
 
-#### Key Features
+== Key Features ==
 * Responsive Layout
 * Custom Colors
 * Custom Header
@@ -31,24 +30,23 @@ UltraResponsive is a free WordPress theme from WpFreeware.com. If you are lookin
 * Preloader
 * The GPL v3.0 or later license. :) Use it to make something cool.
 
-#### Installation
+== Installation ==
 
 1. In your admin panel, go to Appearance -> Themes and click the Add New button.
 2. Click Upload and Choose File, then select the theme's ZIP file. Click Install Now.
 3. Click Activate to use your new theme right away.
 
-#### Frequently Asked Questions
+== Frequently Asked Questions ==
 
-#### How do I change the color scheme, header banner, logo, favicon etc?
+== How do I change the color scheme, header banner, logo, favicon etc? ==
 
 You can change easily all these settings from live customizer theme option panel where you will find all those options like colorpicker, image uploader, social settings etc.
 
-#### How do I add author bio?
+== How do I add author bio? ==
 
 In order to display the author bio box, you need to put author description in the description box. For doing that, go to users > your profile.
 
-
-# Quick Specs
+== Quick Specs ==
 
 1. The main content width is 1170px.
 2. The sidebar width is 335px.
@@ -56,9 +54,9 @@ In order to display the author bio box, you need to put author description in th
 4. 1 level dropdown menu
 
 
-#### Resource License
+== Resource License ==
 
-#### Fonts
+== Fonts ==
 
 [Merriweather] (https://www.google.com/fonts/specimen/Merriweather) - [License] (http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
 
@@ -66,7 +64,7 @@ In order to display the author bio box, you need to put author description in th
 
 [Roboto] (https://www.google.com/fonts/specimen/Roboto) - [License] (http://www.apache.org/licenses/LICENSE-2.0.html)
 
-#### Screenshot Image
+== Screenshot Image ==
 
 Image used in screenshot.png were picked from pixabay.
 
@@ -74,7 +72,7 @@ Image Source: https://pixabay.com/en/photography-taking-picture-display-801891/
 License: licensed under CC0 https://creativecommons.org/choose/zero
 
 
-#### Bootstrap
+== Bootstrap ==
 
 This theme packed with Bootstrap framework which is released under various licenses (MIT & CC)
 
@@ -85,14 +83,14 @@ License URL: https://github.com/twbs/bootstrap/blob/master/LICENSE
 License URL: https://creativecommons.org/licenses/by/3.0/
 
 
-#### WOW Animation
+== WOW Animation ==
 
 URL : http://mynameismatthieu.com/WOW/
 
 License: http://www.gnu.org/licenses/gpl-3.0.html
 
 
-#### FontAwesome Icons
+== FontAwesome Icons ==
 
 WpF ultraResponsive packed with font awesome which released under various licenses (SIL OFL, MIT, CC).
 
@@ -104,7 +102,7 @@ License 2: http://opensource.org/licenses/mit-license.html
 
 License 3: http://creativecommons.org/licenses/by/3.0/
 
-#### Preloader
+== Preloader ==
 
 URL: https://blog.gaya.ninja/articles/queryloader2-preload-your-images-with-ease/) 
 
