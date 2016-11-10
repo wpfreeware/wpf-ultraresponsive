@@ -1,4 +1,5 @@
 #### About Theme
+Theme Name: WpF Ultraresponsive
 Contributors: WpFreeware
 Contributors URI: http://www.wpfreeware.com/wpf-ultraresponsive-free-mobile-friendly-wordpress-theme/
 Tags: full-width-template, one-column, two-column, custom-colors, theme-options, threaded-comments, sticky-post, custom-background, custom-menu, editor-style, featured-images, gray, light, microformats, responsive-layout, right-sidebar, left-sidebar, rtl-language-support, translation-ready, two-columns, black, blue, brown,
