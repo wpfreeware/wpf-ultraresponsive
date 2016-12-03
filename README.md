@@ -78,7 +78,7 @@ Image used in screenshot.png were picked from [pixabay] (https://www.pixabay.com
 
 Source: (https://pixabay.com/en/photography-taking-picture-display-801891/
 
-[licensed CC0] ( https://creativecommons.org/choose/zero )
+License: [CC0] ( https://creativecommons.org/choose/zero )
 
 
 
