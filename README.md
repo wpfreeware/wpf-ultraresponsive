@@ -1,5 +1,6 @@
-#### License
-Contributors: WpFreeware
+#### About Theme
+
+Contributors: wpfreeware
 
 Contributors URI: http://www.wpfreeware.com/wpf-ultraresponsive-free-mobile-friendly-wordpress-theme/
 
@@ -7,7 +8,7 @@ Tags: full-width-template, one-column, two-column, custom-colors, theme-options,
 
 Requires at least: 4.1
 
-Tested up to: 4.4
+Tested up to: 4.6.1
 
 License: GPLv3 or later
 
@@ -73,10 +74,10 @@ In order to display the author bio box, you need to put author description in th
 
 #### Screenshot Image
 
-The screenshot.png created by author & licensed it to [GPL v3 or later] (http://www.gnu.org/licenses/gpl-3.0.html).
 Image used in screenshot.png were picked from [pixabay] (https://www.pixabay.com) , [licensed under CC0] ( https://creativecommons.org/choose/zero ) .
 
 Source: (https://pixabay.com/en/photography-taking-picture-display-801891/
+[licensed CC0] ( https://creativecommons.org/choose/zero )
 
 
 
