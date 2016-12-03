@@ -74,11 +74,12 @@ In order to display the author bio box, you need to put author description in th
 
 #### Screenshot Image
 
-Image used in screenshot.png were picked from [pixabay] (https://www.pixabay.com) , [licensed under CC0] ( https://creativecommons.org/choose/zero ) .
+Images used in screenshot.png were picked from [pexels](https://www.pexels.com), licensed under [CC0](https://creativecommons.org/choose/zero).
 
-Source: (https://pixabay.com/en/photography-taking-picture-display-801891/
-
-License: [CC0] ( https://creativecommons.org/choose/zero )
+Image 1: https://www.pexels.com/photo/black-sunglasses-near-macbook-pro-and-ipad-196659/
+Image 2: https://www.pexels.com/photo/architecture-buildings-city-cityscape-242359/
+Image 3: https://www.pexels.com/photo/adult-black-leather-jacket-blur-camera-241555/
+License: licensed under [CC0](https://creativecommons.org/choose/zero)
 
 
 
