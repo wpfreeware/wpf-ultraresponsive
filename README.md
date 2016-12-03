@@ -77,6 +77,7 @@ In order to display the author bio box, you need to put author description in th
 Image used in screenshot.png were picked from [pixabay] (https://www.pixabay.com) , [licensed under CC0] ( https://creativecommons.org/choose/zero ) .
 
 Source: (https://pixabay.com/en/photography-taking-picture-display-801891/
+
 [licensed CC0] ( https://creativecommons.org/choose/zero )
 
 
